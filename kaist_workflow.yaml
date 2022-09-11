@@ -14,7 +14,7 @@ metadata:
     ai.sap.com/version: "1.0"
 spec:
   imagePullSecrets:
-    - name: credstutorialrepo # your docker registry secret
+    - name: credstutorialrepo-<your name> # your docker registry secret
   entrypoint: mypipeline
   templates:
   - name: mypipeline
