@@ -4,9 +4,9 @@ metadata:
   name: fruit-clf-<TEAM_NUMBER>-<YOUR NAME> # executable id, must be unique across all your workflows (YAML files)
   annotations:
     scenarios.ai.sap.com/description: "Making fruit image classification using CNN"
-    scenarios.ai.sap.com/name: "fruit-image-classification" # Scenario name should be the use case
+    scenarios.ai.sap.com/name: "fruit-image-classification-<YOUR NAME>" # Scenario name should be the use case
     executables.ai.sap.com/description: "Image Tensorlfow GPU Serving executable"
-    executables.ai.sap.com/name: "fruit-serve-exectuable" # Executable name should describe the workflow in the use case
+    executables.ai.sap.com/name: "fruit-serve-exectuable-<YOUR NAME>" # Executable name should describe the workflow in the use case
     artifacts.ai.sap.com/fruitdataset.kind: "dataset"
     artifacts.ai.sap.com/fruitmodel.kind: "model" # Helps in suggesting the kind of artifact that can be generated.
   labels:
@@ -14,7 +14,7 @@ metadata:
     ai.sap.com/version: "1.0"
 spec:
   imagePullSecrets:
-    - name: credstutorialrepo-<your name> # your docker registry secret
+    - name: credstutorialrepo-<YOUR NAME> # your docker registry secret
   entrypoint: mypipeline
   templates:
   - name: mypipeline
