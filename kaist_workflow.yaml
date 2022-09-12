@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: WorkflowTemplate
 metadata:
-  name: fruit-clf-<TEAM_NUMBER> # executable id, must be unique across all your workflows (YAML files)
+  name: fruit-clf-<TEAM_NUMBER>-<YOUR NAME> # executable id, must be unique across all your workflows (YAML files)
   annotations:
     scenarios.ai.sap.com/description: "Making fruit image classification using CNN"
     scenarios.ai.sap.com/name: "fruit-image-classification" # Scenario name should be the use case
